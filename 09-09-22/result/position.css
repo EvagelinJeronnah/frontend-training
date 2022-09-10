@@ -1,0 +1,18 @@
+.main{
+    border: 2px solid rgb(88, 7, 7);
+    width: 500px;
+    height: 500px;
+    position: relative;
+    }
+.sub{
+    color: rgb(230, 36, 68);
+    border: 2px solid rgba(41, 1, 51, 0.39);
+    font-size: 40px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+*{
+    margin: 0;
+    padding: 0;
+}

@@ -1,0 +1,12 @@
+h1{
+    color:rgb(75, 235, 75);
+    text-align:center;
+    border: 2px solid rgb(30, 28, 156);
+    display: block;
+}
+li{
+    display: inline-block;
+    border: 1px solid red;
+    margin:50px;
+    padding: 20px;
+}
