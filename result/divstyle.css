@@ -1,0 +1,8 @@
+h1{
+    color:rgb(75, 235, 75);
+    text-align:center;
+}
+.parent .parent-1 .p1-child-1 p{
+    color:rgb(209, 183, 37);
+    text-align:center;
+}
