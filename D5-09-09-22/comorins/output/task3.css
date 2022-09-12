@@ -1,0 +1,8 @@
+.box1{
+border: 2px solid blue;
+display: inline-block;
+width: 250px;
+height: 200px;
+margin-left: 70px;
+margin-top: 10px;
+}

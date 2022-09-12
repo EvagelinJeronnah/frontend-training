@@ -1,0 +1,7 @@
+.child{
+    border: 2px solid aqua;
+    background-color: pink;
+    width: 103px;
+    height: 600px;
+    display: inline-block;
+}
