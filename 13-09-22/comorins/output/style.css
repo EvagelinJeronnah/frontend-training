@@ -1,0 +1,38 @@
+*{
+    margin:0;
+    padding: 0;
+
+}
+h1{
+    color: white;
+    text-align: center;
+    padding: 10px;
+    background-color: rgb(41, 38, 38);
+    border: 2px solid rgb(41, 38, 38);
+}
+nav{
+    color: white;
+    font-size:30px;
+    text-align: center;
+    padding:20px;
+    background-color: rgb(87, 95, 93);
+    border-bottom:2px solid white;
+    border-top:2px solid  white;
+    
+}
+section{
+    color:white;
+    font-size: 30px;
+    text-align: center;
+    padding: 100px 300px;
+    background-color: gray;
+}
+footer{
+    color:white;
+    font-size:30px;
+    text-align: center;
+    padding: 15px;
+    background-color: black;
+    border-bottom:2px solid white;
+    border-top:2px solid white;
+}
