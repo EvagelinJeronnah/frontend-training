@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+    }
+    p{
+        background-color: black;
+    }
+      @media(min-width: 575px) {
+        p {
+          background-color: red;
+    
+        }
+      }
+      @media(min-width: 767px) {
+    p {
+          background-color: green;
+        }
+      }
+      @media(min-width: 991px) {
+        p {
+          background-color: blue;
+        }
+        }
+      @media(min-width: 1200px) {
+        p {
+          background-color: orangered;
+        }
+        }

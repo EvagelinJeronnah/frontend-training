@@ -1,0 +1,344 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    width: 100%;
+    background-color:white;
+}
+
+/* min width 575  starts */
+
+@media(min-width:575px){
+    .main{
+        width: 100%;
+        margin: 0 auto;
+    }
+h1{
+    text-align: center;
+    padding-top: 20px;
+    font-size: 12px;
+}
+header{
+    background-color: white;
+    font-size: 12px;
+}
+header p{
+    text-align: center;
+    padding: 20px;
+    font-size: 12px;
+}
+header nav{
+    background-color: #333;
+    font-size: 22px;
+}
+ul{
+    background-color: black;
+    padding: 10px;
+    text-align: center;
+}
+nav li{
+    display: inline-block;
+    color: white;
+    padding: 15px;
+}
+
+/* section starts */
+
+.main1{
+    width: 100%;
+    display: block;
+    font-size: 12px;
+}
+
+.img{
+    padding:0px 0px 100px 10px;
+    background-color: gray;
+    margin-right: 7px;
+}
+
+.sub1{
+    background-color: white;
+    margin-top:10px;
+    padding-left: 10px;
+}
+h3{
+    padding-top: 20px;
+}
+.main2{
+    font-size: 12px;
+    width: 100%;
+    display: block;
+}
+.sub2{
+    background-color: white;
+    margin-top: 10px;
+    padding-left: 10px;
+}
+.img1{
+    padding: 10px 0px 40px 0px;
+    background-color: gray;
+    margin: 5px 7px 0px 0px;
+}
+.img2{
+    padding: 0px 0px 30px 10px;
+    background-color: grey;
+    margin-right: 6px;
+}
+
+.sub3{
+    background-color: white;
+    margin-top: 10px;
+    padding: 0px 0px 30px 10px;
+}
+.sub3 h4{
+    margin-bottom: 10px;
+}
+
+.sub4{
+    background-color: white;
+    margin-top: 10px;
+    padding-left: 10px;
+}
+h4{
+    padding-top: 20px;
+}
+
+/* section ends */
+
+/* footer starts */
+
+footer{
+    text-align: center;
+    background-color: rgba(201, 197, 192, 0.911);
+    padding: 20px;
+    margin-top: 10px;
+    font-size: 12px;
+}
+p{
+    padding: 15px 0px;
+}
+}
+
+/* min width 575 ends */
+
+/* min width 767 starts */
+
+@media(min-width:767px){
+    .main{
+        width: 100%;
+        margin: 0 auto;
+    }
+    h1{
+        text-align: center;
+        padding-top: 20px;
+        font-size: 18px;
+    }
+    header{
+        background-color: white;
+        font-size: 18px;
+    }
+    header p{
+        text-align: center;
+        padding: 20px;
+        font-size: 18px;
+    }
+    header nav{
+        background-color: #333;
+        font-size: 18px;
+    }
+    ul{
+        background-color: black;
+        padding: 10px;
+        text-align: center;
+    }
+    nav li{
+        display: inline-block;
+        color: white;
+        padding: 15px;
+        }
+
+    /* section starts */
+
+    .main1{
+        width: 64%;
+        display: inline-block;
+        font-size: 18px;
+    }
+    
+    .img{
+        padding: 0px 0px 100px 10px;
+        background-color: gray;
+        margin-right: 7px;
+    }
+    
+    .sub1{
+        background-color: white;
+        margin-top:10px;
+        padding-left: 10px;
+    }
+    
+    .main2{
+        width: 33%;
+        display: inline-block;
+        vertical-align: top;
+        margin-left:5x;
+        padding-left: 7px;
+        font-size: 18px;
+    }
+    .sub2{
+        background-color: white;
+        margin: 10px 0px 0px 10px;
+        padding-left: 10px;
+    }
+    .img1{
+        padding: 0px 0px 40px 10px;
+        background-color: grey;
+        margin: 5px 7px 0px 0px;
+    }
+    .img2{
+        padding: 0px 0px 30px 10px;
+        background-color: grey;
+        margin-right: 6px;
+    }
+    
+    .sub3{
+        background-color: white;
+        margin: 10px 0px 0px 10px;
+        padding: 0px 0px 30px 10px;
+    }
+    
+    .sub4{
+        background-color: white;
+        margin: 10px 0px 0px 10px;
+        padding-left: 10px;
+    }
+
+    /* section ends */
+
+    /* footer starts */
+
+    footer{
+        text-align: center;
+        background-color: rgba(201, 197, 192, 0.911);
+        padding: 20px;
+        margin-top: 10px;
+        font-size: 18px;
+    }
+    p{
+        padding: 15px 0px;
+    }
+    }
+
+/* min width 767 ends */
+
+/* min width 1200px starts */
+
+@media(min-width:1200px){
+
+    .main{
+        width: 100%;
+        margin: 0 auto;
+    }
+    h1{
+        text-align: center;
+        padding-top: 20px;
+        font-size: 26px;
+    }
+    header{
+        background-color: white;
+        font-size: 26px;
+    }
+    header p{
+        text-align: center;
+        padding: 20px;
+    }
+    header nav{
+        background-color: #333;
+        font-size: 26px;
+    }
+    ul{
+        background-color: black;
+        padding: 10px;
+        text-align: left;
+    }
+    nav li{
+        display: inline-block;
+        color: white;
+        padding: 15px;
+    }
+    nav li:last-child {
+    float: right;
+    }
+   
+    /* section starts */
+
+    .main1{
+        width: 68%;
+        display: inline-block;
+        font-size: 26px;
+    }
+    
+    .img{
+        background-color: gray;
+        padding: 0px 7px 80px 10px;
+    }
+    
+    .sub1{
+        background-color: white;
+        margin-top:10px;
+        padding-left: 10px;
+    }
+    
+    .main2{
+        width: 31%;
+        display: inline-block;
+        vertical-align: top;
+        margin-left:5x;
+        padding-left: 7px;
+        font-size: 26px;
+    }
+    .sub2{
+        background-color: white;
+        margin-top: 10px 0px 0px 10px;
+        padding-left: 10px;
+    }
+    .img1{
+        padding:0px 0px 40px 10px;
+        background-color: grey;
+        margin: 5px 7px 0px 0px;
+    }
+    .img2{
+        padding:0px 0px 30px 10px;
+        background-color: grey;
+        margin-right: 6px;
+    }
+    
+    .sub3{
+        background-color: white;
+        margin: 10px 0px 0px 10px;
+        padding: 0px 0px 30px 10px;
+    }
+    
+    .sub4{
+        background-color: white;
+        margin: 10px 0px 0px 10px;
+        padding-left: 10px;
+    }
+
+    /* section ends */
+
+    /* footer starts */
+
+    footer{
+        text-align: center;
+        background-color: rgba(201, 197, 192, 0.911);
+        padding: 20px;
+        margin-top: 10px;
+        font-size: 26px;
+    }
+    p{
+        padding: 15px 0px;
+    }
+    }
+     /* min width 1200px ends*/
