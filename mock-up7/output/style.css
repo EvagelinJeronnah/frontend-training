@@ -329,7 +329,7 @@ section {
     border-radius: 10px;
     padding: 02x 14px 8.5px 15px;
 }
-.sub6-3 p {
+.pp0 {
     color: #FFFFFF;
     padding: 99px 185px 11px 0px;
 }
@@ -349,9 +349,18 @@ section {
 .sub6-3 input {
     border: 1px solid #FFFFFF;
     border-radius: 5px;
-    padding: 6px 176px 6px 8px;
+    padding: 6px 70px 6px 8px;
+    background: #5D626F;
+    color: #FFFFFF;
 }
-
+.pp1{
+    display: inline-block;
+    color: white;
+    background-color: #EC483C; 
+    border: 1px solid #FFFFFF;
+    border-radius: 5px;
+    padding: 5px;
+}
 .main7 {
     background: #3A3E47;
 }
