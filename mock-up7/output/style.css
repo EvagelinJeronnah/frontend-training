@@ -349,9 +349,10 @@ section {
 .sub6-3 input {
     border: 1px solid #FFFFFF;
     border-radius: 5px;
-    padding: 6px 70px 6px 8px;
+    padding: 6px 70px 7px 8px;
     background: #5D626F;
     color: #FFFFFF;
+    position: relative;
 }
 .pp1{
     display: inline-block;
@@ -360,6 +361,8 @@ section {
     border: 1px solid #FFFFFF;
     border-radius: 5px;
     padding: 5px;
+    position: absolute;
+    right: 166px;
 }
 .main7 {
     background: #3A3E47;
