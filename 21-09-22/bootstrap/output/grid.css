@@ -1,0 +1,38 @@
+header{
+    color: white;
+    text-align: center;
+    padding: 10px;
+    background-color: rgb(41, 38, 38);
+    border: 2px solid rgb(41, 38, 38);
+}
+nav{
+    color: white;
+    font-size:30px;
+    padding: 20px 0px 20px 136px;
+    background-color: rgb(87, 95, 93);
+    border-bottom:2px solid white;
+    border-top:2px solid  white; 
+}
+.box{
+    background-color: gray;
+    padding: 200px 0px;
+    text-align: center;
+    font-size: 30px;
+    margin: 2px;
+}
+.box1{
+    background-color: rgb(172, 169, 169);
+    padding: 200px 0px;
+    text-align: center;
+    font-size: 30px;
+    margin: 2px 2px 2px 10px;
+}
+footer{
+    color:white;
+    font-size:30px;
+    text-align: center;
+    padding: 15px;
+    background-color: black;
+    border-bottom:2px solid white;
+    border-top:2px solid white;
+}
