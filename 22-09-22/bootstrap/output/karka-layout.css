@@ -18,7 +18,7 @@ header li{
     border-bottom: 1px solid #000000;
 }
 .img{
-    margin: 26px 0px 37px;
+    margin: 8px 50px;
 }
 .para {
     vertical-align: middle;
@@ -44,7 +44,7 @@ h2 {
     color: #8F8F8F;
 }
 .i3 {
-    padding: 97px 0px 130px 34px;
+    padding: 30px 0px 30px 14px;
     margin-top: 97px;
 }
 h3 {
@@ -52,7 +52,7 @@ h3 {
     padding-top: 70px;
 }
 .h3-1 {
-    font-size: 43px;
+    font-size: 38px;
 }
 .i4 {
     margin: 40px 0px 40px 34px;
@@ -80,6 +80,7 @@ h3 {
     margin-top: 19px;
     padding: 15px 19px;
     border: 1px solid #7B7979;
+    width: 100%;
 }
 h4 {
     padding-left:  31px;
@@ -110,11 +111,11 @@ h4 {
     margin: 30px 0px 8px 20px;
 }
 .p5{
-    font-size: 20px;
+    font-size: 17px;
     padding-left: 45px;
 }
 .p5-1{
-    padding-left: 25px;
+    padding-left: 18px;
     font-size: 19px;
 }
 .h5-2{
