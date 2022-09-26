@@ -1,0 +1,134 @@
+body{
+    font-family: 'Roboto';
+font-style: normal;
+}
+header{
+    background-image: url(../image/background-img.png);
+}
+
+ul{
+font-weight: 400;
+font-size: 20px;
+line-height: 141.69%;
+color: #005579;
+}
+.heading li{
+    padding-top: 63.5px;
+
+}
+li{
+    padding-top: 26.5px;
+}
+.heading .li1{
+    padding-top: 50px;
+    padding-right: 60px;
+    justify-items: center;
+}
+.banner{
+    width: 90%;
+    font-weight: 500;
+    margin-top: 308px;
+}
+.div-1 {
+    float: right;
+    background-color: #0091ae;
+    height: 150px;
+    text-align: center;
+    width: 150px;
+    border-radius: 6px;
+  }
+  .div-2 {
+    width: 60%;
+font-size: 48px;
+line-height: 56px;
+color: #3EBDCC;
+padding-left: 30px;
+padding-bottom: 308px;
+  }  
+h1{
+font-size: 40px;
+line-height: 141.69%;
+color: #005579;
+padding-left: 30px;
+}
+h2{
+font-weight: 700;
+font-size: 64px;
+line-height: 75px;
+color: #005579;
+}
+.para{
+    font-weight: 400;
+font-size: 24px;
+line-height: 34px;
+color: #005579;
+padding: 30px;
+}
+.box{
+    background: #FFFFFF;
+box-shadow: 0px 4px 10px 3px rgba(0, 0, 0, 0.25);
+border-radius: 8px;
+margin: 0px 44px 68px 44px;
+}
+h3{
+    font-weight: 700;
+font-size: 35px;
+line-height: 40px;
+color: #000000;
+margin-bottom: 18px;
+}
+p{
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 21px;
+    color: #878787;
+    margin-bottom: 36px;
+}
+li{
+    font-weight: 300;
+font-size: 18px;
+line-height: 21px;
+color: #878787;
+}
+ul{
+    list-style: none;
+    text-align: left;
+}
+footer{
+    background: #005579;
+    width: 100%;
+}
+h4{
+    font-weight: 400;
+font-size: 24px;
+line-height: 28px;
+color: #F4A41D;
+mix-blend-mode: normal;
+}
+.foot p{
+    color: #FFFFFF;
+    font-weight: 400;
+font-size: 24px;
+line-height: 28px;
+}
+.foot .para-1{
+    font-weight: 400;
+font-size: 18px;
+line-height: 21px;
+color: #FFFFFF;
+}
+.foot1{
+    padding-top: 85px;
+}
+.foot2{
+    padding-top: 131px;
+}
+.foot3{
+    padding-top: 78.45px;
+}
+.img1{
+    padding-bottom: 18.36px;
+}
+.img2{
+    padding-right: 8px;
+}
