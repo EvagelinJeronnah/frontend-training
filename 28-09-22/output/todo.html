@@ -10,12 +10,21 @@
 <body>
     <input type="text" id="text">
     <button type="button" onclick="add()">Add</button>
+    <ul id="to_do"></ul>
     <script>
             let list=[];
 function add(){
     let to_do=document.getElementById("text").value;
     list.push(to_do);
     console.log(list);
+    display(list);
+}    
+function display(list_arr){
+    let ele="";
+for(let i=0;i<list_arr.length;i++){
+    ele=ele+"<li>"+list_arr[i]+"</li>";
+}
+document.getElementById("to_do").innerHTML=ele;
 }
     </script>
 </body>
