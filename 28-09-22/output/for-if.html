@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <script>
+        let total=0;
+        let count=0;
+        let myresume = {
+            Name: "Evangelin Jeronnah FJ",
+            hobbies: ["Listening music", "Drawing", "Tailoring", "Reading"],
+            education: [{
+                study: "BE CSE(21018-2022)",
+                institute: "Stella Marys College of Engineering.",
+                percentage: 81
+            },
+            {
+                study: "Higher Secondary Education, (2017 -2018)",
+                institute: "Kavimani Desika Vinayakam PillaiGovernment Girls Higher Secondary School",
+                percentage: 72
+            },
+            {
+                study: "SSLC, (2015 - 2016)",
+                institute: "Kavimani Desika Vinayakam PillaiGovernment Girls Higher Secondary School",
+                percentage: 92
+            }],
+            personal_details: {
+                father_Name: "Fredric Ganaraj T(late)",
+                mother_Name: "Jesitha J",
+                dob: "31.07.2000",
+                permanent_address: "114/8A Kulathuvillai,Thengampthoor, Nagercoil.",
+                email: ["evangelinjeronnahfj@gmail.com,evangelin3172000@gmail.com"],
+                phone: 9363373904
+            },
+            skills: ["Object Oriented Programming using Java with MYSQL", "HTML", "C", "C++",
+                "CSS", "JavaScript", "Python", "MS Office"],
+            certification: ["Certificated on “Object Oriented Programming using Java” from the CKS Solution in 2018",
+                "Certificated on “C and C++” from the CKS Solution in 2018."],
+            experenice: "no experience",
+            area_of_interest: ["arts from waste", "presentation"]
+        };
+        for(let i=0;i<myresume.education.length;i++)
+        {
+            if(myresume.education[i].study!="SSLC, (2015 - 2016)")
+            {
+                total=total+myresume.education[i].percentage;
+                count++;
+            }
+        }
+        let j=total/count;
+            console.log(j);
+    </script>
+</body>
+
+</html>
