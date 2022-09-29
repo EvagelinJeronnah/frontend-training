@@ -1,4 +1,7 @@
- /* CSS property for navigation menu starts here*/
+body{
+    border-bottom: 2px solid;
+}
+ /* CSS property for navigation menu */
  .nav_menu {
     overflow: hidden;
     background-color: #333 ;
@@ -18,52 +21,16 @@
     background-color: white;
     color: green;
 }
- /* CSS property for navigation menu ends here */
 form{
     width: 50%;
     margin: auto;
     border-bottom: 20ps;
 }
-input[type=text]{
-    border-top: none;
-    border-left: none;
-    border-right: none;
-    border-bottom: 2px solid yellow;
-    width: 600px;
-}
-input[type=color]{
-    border-top: none;
-    border-left: none;
-    border-right: none;
-    border-bottom: 2px solid yellow;
-    width: 600px;
-    padding:10px;
-}
-input[type=submit]{
-    background-color: yellow;
-    border: 4px solid yellow;
-    color: white;
-    position: absolute;
-    top: 70%;
-    left: 70%;
-}
-label{
-   display: inline-block;
-   width: 120px;
-}
-input{
-    display: inline-block;
-}
-textarea{
-    display: inline-block;
-    border-top: none;
-    border-left: none;
-    border-right: none;
-    border-bottom: 2px solid yellow;
-    width: 600px;
+.text{
+    color: #faa61a;
 }
 li{
-    color:black;
+    color: black;
 }
 h2{
     color: red;
@@ -71,16 +38,10 @@ h2{
 ul{
     display: inline-block;
     background-color: hsl(59, 96%, 54%);
-    width: 46.7%;
-    padding-bottom: 40px;
+    width: 45%;
 }
 ol{
     display: inline-block;
     background-color: hsl(59, 96%, 54%);
-    width: 46.7%;
-    padding-bottom: 40px;
-}
-iframe{
-    height: 50%;
-     width: 50%;
+    width: 45%;
 }
