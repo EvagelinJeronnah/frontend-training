@@ -9,10 +9,40 @@
 
 <body>
     <script>
-            let =[];
-function add(){
-    console.log();
-}    
+function assignGrade(score){
+        if (score>90 && score<=100){
+        console.log("Hi, Your grade is S");
+    }
+    else if (score>80 && score<=90){
+        console.log("Hi, Your grade  is A");
+    }  
+    else if (score>70 && score<=80){
+        console.log("Hi, Your grade  is B");
+    }
+    else if (score>60 && score<=70){
+        console.log("Hi, Your grade  is C");
+    } 
+    else if (score>50 && score<=60){
+        console.log("Hi, Your grade  is D");
+    }  
+    else if (score>40 && score<=50){
+        console.log("Hi, Your grade  is E");
+    }
+    else if (score>0 && score<=40){
+        console.log("Student has failed");
+    }
+    else{
+        console.log("“Invalid marks");
+    }
+    }   
+assignGrade(100);
+assignGrade(82);
+assignGrade(76);
+assignGrade(65);
+assignGrade(54);
+assignGrade(43);
+assignGrade(1);
+assignGrade(1333);
     </script>
 </body>
 
