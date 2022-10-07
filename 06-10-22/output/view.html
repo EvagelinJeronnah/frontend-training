@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>RESUME</h1>
+    Name:<br><br>
+    Email:
+    Phone: 
+    Role: 
+    Objective:<textarea id="role"></textarea><br><br>
+    Experience:<input id=" Experenice"><br><br>
+    Hobbies: <input id="Hobbies">
+    <input id="Hobbies" >
+    <input id="Hobbies" >
+    <input id="Hobbies" ><br><br>
+    Interest: <input id="Interest">
+    <input id="Interest">
+    <input id="Interest">
+    <input id="Interest" ><br><br>
+    Skill: <input id="skill" >
+    <input id="skill" >
+    <input id="skill" >
+    <input id="skill" ><br><br>
+    <table>
+        <h1>Education</h1>
+        <thead>
+            <th>Sudy</th>
+            <th>Institute</th>
+            <th>Percentage</th>
+            <th>Year</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td><input id="study" ></td>
+                <td><input id="instiute" ></td>
+                <td><input id="percentage" ></td>
+                <td><input id="year"></td>
+            </tr>
+            <tr>
+                <td><input id="study"></td>
+                <td><input id="institute"></td>
+                <td><input id="percentage"></td>
+                <td><input id="year" ></td>
+            </tr>
+            <tr>
+                <td><input id="study"></td>
+                <td><input id="institute"></td>
+                <td><input id="percentage"></td>
+                <td><input id="year"></td>
+            </tr>
+            <tr>
+                <td><input id="study"></td>
+                <td><input id="institute"></td>
+                <td><input id="percentage"></td>
+                <td><input id="year"></td>
+            </tr>
+        </tbody>
+    </table>
+    <table>
+       <h1>Course Certificate</h1>
+        <thead>
+            <th>Course_name</th>
+            <th>Duration</th>
+            <th>Institute</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td><input id="Course-name"></td>
+                <td><input id="Duration"></td>
+                <td><input id="Institute"></td>
+            </tr>
+            <tr>
+                <td><input id="Course-name"></td>
+                <td><input id="Duration"></td>
+                <td><input id="Institute"></td>
+            </tr>
+            <tr>
+                <td><input id="Course-name"></td>
+                <td><input id="Duration"></td>
+                <td><input id="Institute"></td>
+            </tr>
+        </tbody>
+    </table>
+    <table>
+        <h1>Projects</h1>
+        <thead>
+            <th>Title</th>
+            <th>Abstract</th>
+            <th>Software</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td><input id="Title"></td>
+                <td><textarea id="Abstract"></textarea></td>
+                <td><input id="Software"></td>
+            </tr>
+            <tr>
+                <td><input id="Title"></td>
+                <td><textarea id="Abstract"></textarea></td>
+                <td><input id="Software"></td>
+            </tr>
+        </tbody>
+    </table>
+        <h1> Personal Details</h1>
+        Father Name:<input id="Father_Name"><br><br>
+        Mother Name:<input id="Mother_Name"><br><br>
+        DOB:<input id="DOB"><br><br>
+        Permanent Aaddress:<textarea id=" Permanent_address"></textarea><br><br>
+        Martial status:<input id=" Martial_status"><br><br>
+        Gender:<input id="Gender"><br><br>
+        Nationality:<input id="Nationality"><br><br>
+        Language:<input id="Language">
+        <input id="Language">
+        <input id="Language"><br><br>
+<script>
+const queryString = window.location.search;
+const urlParams = new URLSearchParams(queryString);
+const product = urlParams.get('Name');
+alert(product);
+</script>
+</body>
+</html>

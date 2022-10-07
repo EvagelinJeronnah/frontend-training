@@ -13,10 +13,19 @@
     Phone: <input id="phone" onkeyup="adddetails('Phone',this.value)"><br><br>
     Role: <input id="role" onkeyup="adddetails('Role',this.value)"><br><br>
     Objective:<textarea id="role" onkeyup="adddetails('Objective',this.value)"></textarea><br><br>
+    Experience:<input id=" Experenice" onkeyup="adddetails(' Experenice',this.value)"><br><br>
     Hobbies: <input id="Hobbies" onkeyup="adddetails('Hobbies',this.value,0)">
     <input id="Hobbies" onkeyup="adddetails('Hobbies',this.value,1)">
     <input id="Hobbies" onkeyup="adddetails('Hobbies',this.value,2)">
     <input id="Hobbies" onkeyup="adddetails('Hobbies',this.value,3)"><br><br>
+    Interest: <input id="Interest" onkeyup="adddetails('Interest',this.value,0)">
+    <input id="Interest" onkeyup="adddetails('Interest',this.value,1)">
+    <input id="Interest" onkeyup="adddetails('Interest',this.value,2)">
+    <input id="Interest" onkeyup="adddetails('Interest',this.value,3)"><br><br>
+    Skill: <input id="skill" onkeyup="adddetails('Skill',this.value,0)">
+    <input id="skill" onkeyup="adddetails('Skill',this.value,1)">
+    <input id="skill" onkeyup="adddetails('Skill',this.value,2)">
+    <input id="skill" onkeyup="adddetails('Skill',this.value,3)"><br><br>
     <table>
         <h1>Education</h1>
         <thead>
@@ -52,15 +61,6 @@
             </tr>
         </tbody>
     </table>
-    Experience:<input id=" Experenice" onkeyup="adddetails(' Experenice',this.value)"><br><br>
-    Interest: <input id="Interest" onkeyup="adddetails('Interest',this.value,0)">
-    <input id="Interest" onkeyup="adddetails('Interest',this.value,1)">
-    <input id="Interest" onkeyup="adddetails('Interest',this.value,2)">
-    <input id="Interest" onkeyup="adddetails('Interest',this.value,3)"><br><br>
-    Skill: <input id="skill" onkeyup="adddetails('Skill',this.value,0)">
-    <input id="skill" onkeyup="adddetails('Skill',this.value,1)">
-    <input id="skill" onkeyup="adddetails('Skill',this.value,2)">
-    <input id="skill" onkeyup="adddetails('Skill',this.value,3)"><br><br>
     <table>
        <h1>Course Certificate</h1>
         <thead>
@@ -114,21 +114,26 @@
         Martial status:<input id=" Martial_status" onkeyup="adddetails('Personal_Details',this.value,' Martial_status')"><br><br>
         Gender:<input id="Gender" onkeyup="adddetails('Personal_Details',this.value,'Gender')"><br><br>
         Nationality:<input id="Nationality" onkeyup="adddetails('Personal_Details',this.value,'Nationality')"><br><br>
-        Language:<input id="Language" onkeyup="adddetails('Personal_Details',this.value)"><br><br>
-        <input id="Language" onkeyup="adddetails('Personal_Details',this.value)"><br><br>
-        <input type="submit" value="Submit">
+        Language:<input id="Language" onkeyup="adddetails('Language',this.value,0)">
+        <input id="Language" onkeyup="adddetails('Language',this.value,1)">
+        <input id="Language" onkeyup="adddetails('Language',this.value,2)"><br><br>
+        <button onclick="display()">SUBMIT</button>
+        <ul id="ul1">
+
+        </ul>
     <div>
         <code id="obj"></code>
     </div>
     <script>
         let resume = {
             Hobbies:[],
-            education:[],
-            Skill: [],
             Interest:[],
+            Skill: [],
+            education:[],
             Course_Certificate:[],
             Projects:[],
-            Personal_Details:{Language:[]}
+            Personal_Details:{},
+            Language:[]
         }
         function adddetails(key, value,index = null,indexkey=null) {
             if (index == null && indexkey==null) {
@@ -143,12 +148,25 @@
                 }
                 resume[key][index][indexkey]=value;
             }
-            display();
         }
         function display() {
             document.getElementById("obj").innerHTML = JSON.stringify(resume);
+            if(!localStorage.getItem("list")){
+            localStorage.setItem("list",JSON.stringify([]))
         }
-
+        let list1=JSON.parse(localStorage.getItem("list"));
+        list1.push(resume)
+        localStorage.setItem("list",JSON.stringify(list1))
+        namedisplay();
+}
+function namedisplay(){
+    let element=""
+    let resumeindex=JSON.parse(localStorage.getItem("list"))
+    for(let i=0;i<resumeindex.length;i++){
+        element=element+"<li> <a href='view.html?Name="+resumeindex[i].Name +"'target='_blank'>"+resumeindex[i].Name+"</a></li>"
+    }
+    document.getElementById("ul1").innerHTML=element
+}
     </script>
 </body>
 
