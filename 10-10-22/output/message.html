@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>OLX</title>
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <!-- Css -->
+    <link rel="stylesheet" href="message.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+</head>
+
+<body onload="gettingRooms()">
+    <div class="header container">
+        <a href="index.html">
+            <img src="image/olx-logo.png" width="150" height="130" class="d-inline-block align-top" alt="">
+        </a>
+        <button class="account" onclick="window.location='account.html'">My Account</button>
+        <button class="SubmitAD" onclick="window.location='ad.html'">Submit An Ad</button>
+        <button class="SubmitAD" onclick="window.location='message.html'">My Messages</button>
+    </div>
+    <div class="container" id="chats">
+        <h1 class="align-center" id="Heading">YOUR CHATS</h1>
+        <hr id="hr">
+        <div id="ChatMain">
+        </div>
+    </div>
+    <div id="offlineMessage" style="display: none;">
+        <h2>View Your Offline Ads</h2>
+        <button class="btn btn-danger" onclick="window.location.href='account.html'">View Offline Ads</button>
+    </div>
+    <div class="loader" style="display: none;" id="loader">
+        <img src="image/loader.gif" alt="Loading">
+        <div></div>
+    </div>
+    </div>
+    <div class="modal product_view" id="product_view">
+        <div class="modal-dialog">
+            <div class="modal-content" id="ModalMain">
+            </div>
+        </div>
+    </div>
+</body>
+
+<body onload="gettingMessages()">
+    <div class="header container">
+        <div class="MessageBox container">
+            <div id="MessageBox">
+            </div>
+            <div class="Main" id="Main">
+            </div>
+            <div class="footer">
+                <div class="input-group mb-3 message">
+                    <input type="text" class="form-control" placeholder="Enter Your Message Here" id="messageText">
+                    <div class="input-group-append">
+                        <button class="btn btn-outline-secondary" type="button" onclick="sendMessage()">Send
+                            Message</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="loader container" style="display: none;" id="loader">
+            <img src="image/loader.gif" alt="Loading">
+            <div></div>
+        </div>
+        <div class="modal product_view container" id="product_view">
+            <div class="modal-dialog">
+                <div class="modal-content" id="ModalMain">
+                </div>
+            </div>
+        </div>
+        <script>
+            var loader = document.getElementById("loader")
+            function hideLoader() {
+                loader.style.display = "none";
+            } function showLoader() {
+                loader.style.display = "block";
+            }
+            window.addEventListener('load', function (e) {
+                if (navigator.onLine) {
+                    console.log('We\'re online!');
+                } else {
+                    var offline = document.getElementById("offlineMessage").style.display = "block"
+
+                    hideLoader()
+                    showAndDismissAlert('danger', "You Are Offline")
+                }
+            }, false);
+
+            window.addEventListener('online', function (e) {
+                var offline = document.getElementById("offlineMessage").style.display = "none"
+
+                showAndDismissAlert('success', "You Are Online")
+            }, false);
+
+            window.addEventListener('offline', function (e) {
+                var offline = document.getElementById("offlineMessage").style.display = "block"
+
+                hideLoader()
+                showAndDismissAlert('danger', "You Are Offline")
+            }, false);
+            var userId = localStorage.getItem("userId");
+            var reciverId = localStorage.getItem("reciverId");
+            var AdId = localStorage.getItem("AdId");
+        </script>
+        <!-- BootStarp -->
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/bootstrap.js"></script>
+</body>
+
+</html>

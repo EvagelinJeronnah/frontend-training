@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>OLX</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!-- Css -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Manifest -->
+    <link rel="manifest" href="manifest.json">
+</head>
+
+<body>
+    <div class="Main">
+        <div class="header container">
+            <a href="index.html">
+                <img src="image/olx-logo.png" width="150" height="130" class="d-inline-block align-top" alt="">
+            </a>
+            <button class="account" onclick="window.location='account.html'">My Account</button>
+            <button class="SubmitAD" onclick="window.location='ad.html'">Submit An Ad</button>
+        </div>
+        <div class="SearchDiv jumbotron">
+            <select class="form-control" id="cities">
+                <option value="India">India</option>
+                <option value="karachi">Karachi</option>
+                <option value="lahore">Lahore</option>
+                <option value="islamabad">Islamabad</option>
+                <option value="tamilnadu">Tamilnadu</option>
+            </select>
+            <input type="text" placeholder="     Search" id="searchInput">
+            <button class="btn btn-info btn-lg" onclick="search()">
+                <span class="glyphicon glyphicon-search"></span> Search
+            </button>
+        </div>
+        <h1>Add</h1>
+    </div>
+    <footer>
+        <div class="container-fluid foot">
+            <div class="Main_footer">
+                <div class="footer">
+                    <div class="footer_box">
+                        <h2>POPULAR LOCATIONS</h2>
+                        <p> Kolkata</p>
+                        <p>Mumbai</p>
+                        <p>Chennai</p>
+                        <p>pune</p>
+                    </div>
+                    <div class="footer_box">
+                        <h2>TRENDING LOCATIONS</h2>
+                        <p> Bhubaneshwar</p>
+                        <p>Hyderabad</p>
+                        <p>Chandigarh</p>
+                        <p>Nashik</p>
+                    </div>
+                    <div class="footer_box">
+                        <h2>ABOUT US</h2>
+                        <p> About OLX Group</p>
+                        <p>Careers</p>
+                        <p>Contact Us</p>
+                        <p>OLXPeople</p>
+                    </div>
+                    <div class="footer_box">
+                        <h2>OLX</h2>
+                        <p> Help</p>
+                        <p>Legal & Privacy information</p>
+                        <p>Blog</p>
+                        <img src="image/fb-i.png">
+                        <img src="image/twitter.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- BootStarp -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>

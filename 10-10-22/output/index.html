@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>OLX </title>
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <!-- Bootstrap -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/bootstrap.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <!-- Css -->
+  <link rel="stylesheet" href="style.css">
+  <!-- Manifest -->
+  <link rel="manifest" href="manifest.json">
+  <!-- Add to home screen for Safari on iOS -->
+  <meta name="" content="yes">
+  <meta name="" content="black">
+  <meta name="" content="OLX Pak">
+  <link rel="" href="image/192.png">
+  <meta name="Olx Pak" content="image/144.png">
+  <meta name="Olx Pak" content="#5C307F">
+  <!-- Manifest ENd -->
+</head>
+
+<body>
+  <div class="container-fluid">
+    <header>
+      <!--==================== *  Navbar * =============================  -->
+      <div class="row head">
+        <div class="header col-2" id="myHeader">
+          <a href="index.html">
+            <img src="image/olx-logo.png" width="150" height="130" class="d-inline-block align-top" alt="">
+          </a>
+        </div>
+        <div class="col-10`" id="list">
+          <ul class="nav justify-content-center">
+            <li class="nav-item">
+              <a class="nav-link active"><button class="account" onclick="window.location='account.html'">My
+                  Account</button></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link"><button class="SubmitAD" onclick="window.location='ad.html'">Submit An
+                  Ad</button></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link"><button class="account" onclick="window.location='account.html'">My
+                  Orders</button></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link"><button class="SubmitAD" onclick="window.location='message.html'">My
+                  Messages</button></a>
+            </li>
+            <li class="nav-item" id="login">
+              <a class="nav-link "><button class="account" id="login" onclick="window.location='login.html'">Log
+                  In</button></a>
+            </li>
+            <li class="nav-item your_logo" id="logout">
+              <a class="nav-link girl_img" id="girl_img_id" id="logout"><button class="login account nameandimg"
+                  onclick="window.location='index.html'" id="gropdwonid">Log Out</button>
+                <p></p>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <div class="SearchDiv jumbotron">
+      <div class="searchTab">
+        <input type="search" id="txtSearch" placeholder="Search" style="border:none">
+        <a href="openAdd.html"><img src="image/search.png" id="searchImg"></a>
+      </div>
+    </div>
+    <div class="titleDiv">
+      <h1 class="heading container" id="heading" data-toggle="collapse" data-target="#collapseExample"
+        aria-expanded="false" aria-controls="collapseExample">Avaliable Products</h1>
+    </div>
+    <section>
+      <div>
+        <h1 class="text-white pl-2 sec1">Best Place sell your product</h1>
+      </div>
+      <div class="container-fluid">
+        <div class=" pt-4 pb-4">
+          <div class="row m-0 pt-5 flex">
+            <div class=" card col">
+              <div class="img">
+                <img src="" id="image0" class="img1" />
+              </div>
+              <h3 id="price0" class="card-title"></h3>
+              <h5 id="model0"></h5>
+              <p id="address0"></p>
+            </div>
+            <div class=" card col">
+              <div class="img">
+                <img src="" id="image1" class="img1" />
+              </div>
+              <h3 id="price1" class="card-title"></h3>
+              <h5 id="model1"></h5>
+              <p id="address1"></p>
+            </div>
+            <div class="card col">
+              <div class="img">
+                <img src="" id="image2" class="img1" />
+              </div>
+              <h3 id="price2" class="card-title"></h3>
+              <h5 id="model2"></h5>
+              <p id="address2"></p>
+            </div>
+            <div class=" card col">
+              <div class="img">
+                <img src="" id="image3" class="img1" />
+              </div>
+              <h3 id="price3" class="card-title"></h3>
+              <h5 id="model3"></h5>
+              <p id="address3"></p>
+            </div>
+          </div>
+          <div class="row m-0 pt-5 flex">
+            <div class=" card col">
+              <div class="img">
+                <img src="" id="image4" class="img1" />
+              </div>
+              <h3 id="price4" class="card-title"></h3>
+              <h5 id="model4"></h5>
+              <p id="address4"></p>
+            </div>
+            <div class=" card col">
+              <div class="img">
+                <img src="" id="image5" class="img1" />
+              </div>
+              <h3 id="price5" class="card-title"></h3>
+              <h5 id="model5"></h5>
+              <p id="address5"></p>
+            </div>
+            <div class="card col">
+              <div class="img">
+                <img src="" id="image6" class="img1" />
+              </div>
+              <h3 id="price6" class="card-title"></h3>
+              <h5 id="model6"></h5>
+              <p id="address6"></p>
+            </div>
+            <div class=" card col">
+              <div class="img">
+                <img src="" id="image7" class="img1" />
+              </div>
+              <h3 id="price7" class="card-title"></h3>
+              <h5 id="model7"></h5>
+              <p id="address7"></p>
+            </div>
+          </div>
+          <div class="row m-0 pt-5 flex">
+            <div class=" card col">
+              <div class="img">
+                <img src="" id="image8" class="img1" />
+              </div>
+              <h3 id="price8" class="card-title"></h3>
+              <h5 id="model8"></h5>
+              <p id="address8"></p>
+            </div>
+            <div class=" card col">
+              <div class="img">
+                <img src="" id="image9" class="img1" />
+              </div>
+              <h3 id="price9" class="card-title"></h3>
+              <h5 id="model9"></h5>
+              <p id="address9"></p>
+            </div>
+            <div class="card col">
+              <div class="img">
+                <img src="" id="image10" class="img1" />
+              </div>
+              <h3 id="price10" class="card-title"></h3>
+              <h5 id="model10"></h5>
+              <p id="address10"></p>
+            </div>
+            <div class=" card col">
+              <div class="img">
+                <img src="" id="image11" class="img1" />
+              </div>
+              <h3 id="price11" class="card-title"></h3>
+              <h5 id="model11"></h5>
+              <p id="address11"></p>
+            </div>
+          </div>
+        </div>
+      </div>      
+      <div class="container">
+        <div class="row mt-3" id="bookmarkview">
+            
+            
+      </div>
+    </div>
+    <div class="card mb-3 mt-3 container" >
+              
+      <div class="text-center mt-3">
+          <img src="" id="bigimage" alt="..." width="600px">
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-3">
+            <div class="card bg-light border-dark mb-3" style="max-width: 70rem;">
+              <div class="card-header"></div>
+              <div class="card-body">
+                <h5 class="card-title" id="tittle"></h5>
+                <p class="card-text" id="Category"></p>
+                <p class="card-text" id="AdDescription"></p>
+                <p class="card-text" id="price"></p>
+                <p class="card-text" id="Name"></p>
+                <p class="card-text" id="Name1"></p>
+                <p class="card-text" id="Number"></p>
+                <p class="card-text" id="address"></p>
+                <p class="card-text" id="Street"></p>
+                <p class="card-text" id="Date"></p>
+                <p class="card-text " id="city"></p>
+                <p class="card-text" id="Pin"></p>
+                <button onclick="add()">BOOKMARK</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </section>
+
+
+    <footer>
+      <div class="container-fluid foot">
+        <div class="Main_footer">
+          <div class="footer">
+            <div class="footer_box">
+              <h2>POPULAR LOCATIONS</h2>
+              <p> Kolkata</p>
+              <p>Mumbai</p>
+              <p>Chennai</p>
+              <p>pune</p>
+            </div>
+            <div class="footer_box">
+              <h2>TRENDING LOCATIONS</h2>
+              <p> Bhubaneshwar</p>
+              <p>Hyderabad</p>
+              <p>Chandigarh</p>
+              <p>Nashik</p>
+            </div>
+            <div class="footer_box">
+              <h2>ABOUT US</h2>
+              <p> About OLX Group</p>
+              <p>Careers</p>
+              <p>Contact Us</p>
+              <p>OLXPeople</p>
+            </div>
+            <div class="footer_box">
+              <h2>OLX</h2>
+              <p> Help</p>
+              <p>Legal & Privacy information</p>
+              <p>Blog</p>
+              <img src="image/fb-i.png">
+              <img src="image/twitter.png">
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+           
+
+  <script>
+      function show(){
+          let bookmarkDetails=JSON.parse(localStorage.getItem("bookmarks"));
+          let element=" ";
+          for(let i=0;i<bookmarkDetails.length;i++){
+          element+='<div class="card mb-3  col-6" ><img src='+bookmarkDetails[i].newsImage+'class="card-img-top"alt="..." ><div class="card-body"><h5 class="card-title"><a href="view.html?newsId='+bookmarkDetails[i].newsId+' "target=_blank">'+bookmarkDetails[i].newsTitle+'</a></h5><p class="card-text"><small class="text-muted">'+bookmarkDetails[i].date+'</small></p><button onclick="remove('+i+');">DELETE</button></div></div>'
+                       
+      }  
+      if(!localStorage.getItem("bookmarks")){
+            localStorage.setItem("bookmarks",JSON.stringify([]))
+        }
+         let bookmarks=JSON.parse(localStorage.getItem("bookmarks"))
+            function add(){
+                for(let i=0;i<newsDetails.length;i++){
+                    if(product==newsDetails[i].newsId){
+                        bookmarks.push(newsDetails[i]);
+                    }
+                }
+                localStorage.setItem("bookmarks",JSON.stringify(bookmarks))
+            }
+      document.getElementById("bookmarkview").innerHTML=element;  
+      }
+       show();
+      function remove(i){
+      let bookmark_1=JSON.parse(localStorage.getItem("bookmarks"));
+      bookmark_1.splice(i,1);
+      localStorage.setItem("bookmarks",JSON.stringify(bookmark_1));
+      show()
+      }
+
+  </script>
+    <script>
+      document.getElementById("login").hidden = true;
+      document.getElementById("login")
+        .addEventListener("click", () => {
+          document.getElementById("login").hidden = true;
+          document.getElementById("logout").hidden = false;
+        }, false);
+    </script>
+    <!--
+    <script>
+        let my_details=JSON.parse(localStorage.getItem("mydet"));
+let url_string=window.location.search;
+  let urlParams = new URLSearchParams(url_string);
+  let url = urlParams.get('card-title');
+  let url1 = urlParams.get('Category');
+  let url2 = urlParams.get('AdDescription');
+  let url3 = urlParams.get('image');
+  let url4 = urlParams.get('price');
+  let url5 = urlParams.get('Name');
+  let url6 = urlParams.get('card-title');
+  let url7 = urlParams.get('Number');
+  let url8 = urlParams.get('city');
+
+      let Title="";
+      document.setElementsByClassName("card-title").innerHtml=Title;
+      let Category="";
+      document.setElementsByClassName("Category").innerHtml=Category;
+      let AdDescription="";
+      document.getElementsByClassName("AdDescription").innerHtml=AdDescription;
+      let image="";
+      document.setElementsByClassName("image").innerHtml=image;
+      let price="";
+      document.setElementsByClassName("price").innerHtml=price;
+      let Name="";
+      document.setElementsByClassName("Name").innerHtml=Name;
+      let Number="";
+      document.setElementsByClassName("Number").innerHtml=Number;
+      let city="";
+      document.setElementsByClassName("city").innerHtml=city;
+let mydetail_1={
+}
+function adddetails1(index,item) {
+ mydetail_1[index]=item; 
+}
+function signUp1(){
+    $(function(index, item) {
+$.ajax({
+success: function(index, item) {
+  $.each(function(index, item) {
+    html +=
+      '<div class="card bg-light border-dark mb-3" style="max-width: 70rem;">';
+    html += `<div class="card-header">userid: ${item.userId} - id: ${item.id}</div>`;
+    html += '<div class="card-body">';
+    html += `<h5 class="card-title">${item.title}</h5>`;
+    html += `<p class="card-text Category">${item.body}</p>`;
+    html += `<p class="card-text AdDescription">${item.body}</p>`;
+    html += `<p class="card-text price">${item.body}</p>`;
+    html += `<p class="card-text Name">${item.body}</p>`;
+    html += `<p class="card-text Number">${item.body}</p>`;
+    html += `<p class="card-text city">${item.body}</p>`;
+    html += "</div>";
+    html += "</div>";
+    html += "</div>";
+    //using .html() will display one card,use loop to display each card
+  });
+  $(".container").html(mydetail_1);
+}
+});
+});}
+        let text = document.getElementById('text');
+        contry.addEventListener('click', () => {
+            list.classList.toggle('hidden');
+        });
+        function myfunction(omkar) {
+            text.innerHTML = omkar;
+        }
+        let girl_img_id = document.getElementById('girl_img_id');
+        let gropdwonid = document.getElementById('gropdwonid');
+        girl_img_id.addEventListener('click', () => {
+            gropdwonid.classList.toggle('block_div')
+        });
+    </script> -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>

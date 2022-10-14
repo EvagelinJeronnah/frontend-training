@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>OLX</title>
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!-- Css -->
+    <link rel="stylesheet" href="account.css">
+
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+
+<body id="body">
+    <div class="FullpageAccount" id="FullpageAccount">
+        <div class="header">
+            <a href="index.html">
+                <img src="image/olx-logo.png" width="150" height="130" class="d-inline-block align-top" alt="">
+            </a>
+            <button class="SubmitAD" onclick="window.location='ad.html'">Submit An Ad</button>
+            <button class="SubmitAD" onclick="window.location='messageMain.html'">My Messages</button>
+            <button class="SubmitAD" onclick="window.location.href='#userFav'">Fav Ads</button>
+            <button class="SubmitAD" onclick="logout()">Logout</button>
+        </div>
+        <hr>
+        <!-- User ADs -->
+        <div class="titleDiv container">
+            <h1 id="welcomeName"></h1>
+            <h1>Your Ads</h1>
+        </div>
+        <div class="userAds container" id="userAds">
+        </div>
+        <!-- User ADs -->
+        <!-- Users Fav -->
+        <div class="titleDiv container">
+            <h1>Favorite Ads</h1>
+        </div>
+        <div class="userAds container" id="userFav">
+        </div>
+        <!-- Users Fav -->
+    </div>
+    <div class="modal product_view" id="product_view">
+        <div class="modal-dialog">
+            <div class="modal-content" id="ModalMain">
+            </div>
+        </div>
+    </div>
+    <div class="loader" style="display: none;" id="loader">
+        <img src="image/loader.gif" alt="Loading">
+        <div></div>
+    </div>
+    <div class="alert-messages text-center">
+    </div>
+    </div>
+    </div>
+    <footer>
+        <div class="container-fluid foot">
+            <div class="Main_footer">
+                <div class="footer">
+                    <div class="footer_box">
+                        <h2>POPULAR LOCATIONS</h2>
+                        <p> Kolkata</p>
+                        <p>Mumbai</p>
+                        <p>Chennai</p>
+                        <p>pune</p>
+                    </div>
+                    <div class="footer_box">
+                        <h2>TRENDING LOCATIONS</h2>
+                        <p> Bhubaneshwar</p>
+                        <p>Hyderabad</p>
+                        <p>Chandigarh</p>
+                        <p>Nashik</p>
+                    </div>
+                    <div class="footer_box">
+                        <h2>ABOUT US</h2>
+                        <p> About OLX Group</p>
+                        <p>Careers</p>
+                        <p>Contact Us</p>
+                        <p>OLXPeople</p>
+                    </div>
+                    <div class="footer_box">
+                        <h2>OLX</h2>
+                        <p> Help</p>
+                        <p>Legal & Privacy information</p>
+                        <p>Blog</p>
+                        <img src="image/fb-i.png">
+                        <img src="image/twitter.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- BootStarp -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+</body>
+
+</html>

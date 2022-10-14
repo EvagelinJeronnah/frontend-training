@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>OLX</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!-- Css -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Manifest -->
+    <link rel="manifest" href="manifest.json">
+</head>
+
+<body>
+    <div class="Main">
+        <div class="header container">
+            <a href="index.html">
+                <img src="image/olx-logo.png" width="150" height="130" class="d-inline-block align-top" alt="">
+            </a>
+            <button class="account" onclick="window.location='account.html'">My Account</button>
+            <button class="SubmitAD" onclick="window.location='ad.html'">Submit An Ad</button>
+            <section>
+                <div class="container">
+                    <div class="row pt-5">
+                        <div class="col-lg-7">
+                            <img src="" id="image" alt="" class="viewimage pt-3 w-100 h-100" />
+                        </div>
+                        <div class="col-lg-5 d-flex justify-content-center">
+                            <div class="pt-5 pl-5  pb-5">
+                                <h2 id="price" class="pt-5 "></h2>
+                                <h3 id="model" class="pt-2"></h3>
+                                <p class="pt-2">Seller</p>
+                                <h5 id="address"></h5>
+                                <p id="Date" class="pt-2"></p>
+                                <a href="login.html" class="btn btn-primary btn-lg active" role="button"
+                                    aria-pressed="true">Make Offer</a>
+                                <!-- <p id="Phonenumber"class="pt-2"></p> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <footer>
+                <div class="container-fluid foot">
+                    <div class="Main_footer">
+                        <div class="footer">
+                            <div class="footer_box">
+                                <h2>POPULAR LOCATIONS</h2>
+                                <p> Kolkata</p>
+                                <p>Mumbai</p>
+                                <p>Chennai</p>
+                                <p>pune</p>
+                            </div>
+                            <div class="footer_box">
+                                <h2>TRENDING LOCATIONS</h2>
+                                <p> Bhubaneshwar</p>
+                                <p>Hyderabad</p>
+                                <p>Chandigarh</p>
+                                <p>Nashik</p>
+                            </div>
+                            <div class="footer_box">
+                                <h2>ABOUT US</h2>
+                                <p> About OLX Group</p>
+                                <p>Careers</p>
+                                <p>Contact Us</p>
+                                <p>OLXPeople</p>
+                            </div>
+                            <div class="footer_box">
+                                <h2>OLX</h2>
+                                <p> Help</p>
+                                <p>Legal & Privacy information</p>
+                                <p>Blog</p>
+                                <img src="image/fb-i.png">
+                                <img src="image/twitter.png">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+            <!-- BootStarp -->
+            <script src="js/bootstrap.min.js"></script>
+            <script src="js/bootstrap.js"></script>
+            <script>
+                let new_list = JSON.parse(localStorage.getItem("olx"));
+                let url_string = window.location.search;
+                let urlParams = new URLSearchParams(url_string);
+                let url = urlParams.get('id')
+                //alert(url)
+                for (let i = 0; i < new_list.length; i++) {
+                    if (url == new_list[i].id) {
+                        document.getElementById("image").src = new_list[i].image;
+                        document.getElementById("price").innerHTML = new_list[i].price;
+                        document.getElementById("model").innerHTML = new_list[i].model;
+                        document.getElementById("address").innerHTML = new_list[i].address;
+                        document.getElementById("Date").innerHTML = new_list[i].Date; z
+                        // document.getElementById("Phonenumber").innerHTML=new_list[i].Phonenumber;
+                    }
+                }
+                function loginpage() {
+                    window.location.href = "login.html"
+                }    </script>
+            <script src="js/bootstrap.min.js"></script>
+            <script src="js/bootstrap.js"></script>
+            <script src="app.js"></script>
+</body>
+
+</html>

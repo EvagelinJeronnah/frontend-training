@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>OLX</title>
+  <!-- Bootstrap -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/bootstrap.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+  <!-- Css -->
+  <link rel="stylesheet" href="ad.css">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+  <div class="Fullpage head">
+    <div class="header container">
+      <a href="index.html"><img src="image/olx-logo.png" height="130px" width="150px"></a>
+      <button class="account" onclick="window.location='account.html'">My Account</button>
+      <button class="SubmitAD" onclick="window.location='ad.html'">Submit An Ad</button>
+      <button class="SubmitAD" onclick="logout()">Logout</button>
+    </div>
+    <hr>
+    <h3 id="title2">Submit An Ad</h3>
+    <div class="AdFormMain container ">
+      <div class="form-group col-md-12 col-sm-12">
+        <label for="adTitle">Ad Title</label>
+        <input type="text" class="form-control card-title" id="adTitle" required onkeyup="adddetails1('card-title',this.value)">
+      </div>
+      <div class="form-group col-md-12">
+        <label for="Category">Category</label>
+        <input type="test" id="Category" class="form-control card-text Category" required onkeyup="adddetails1('Category',this.value)">
+          <!-- <option selected value="">Select Category</option>
+          <option value="Mobiles" id="Category" onkeyup="adddetails1('Category',this.value,0)">Mobiles</option>
+          <option value="Cars"id="Category" onkeyup="adddetails1('Category',this.value,1)">Cars</option>
+          <option value="Bikes" id="Category" onkeyup="adddetails1('Category',this.value,2)">Bikes</option>
+          <option value="Furniture" id="Category" onkeyup="adddetails1('Category',this.value,3)">Furniture</option>
+          <option value="Kids" id="Category" onkeyup="adddetails1('Category',this.value,4)">Kids</option>
+          <option value="Animals" id="Category" onkeyup="adddetails1('Category',this.value,5)">Animals</option>
+        </select> -->
+      </div>
+      <div class="form-group col-md-12">
+        <label for="AdDescription">Ad Description</label>
+        <textarea class="form-control card-text AdDescription" placeholder="Include the brand, model, age and any included accessories."
+          id="AdDescription" required onkeyup="adddetails1('AdDescription',this.value)"></textarea>
+      </div>
+      <div class="form-group col-md-12 ">
+        <div class="form-group ">
+          <label for="UploadImage">Upload Photos</label>
+          <input type="file" class="form-control-file image" id="UploadImage" required onkeyup="adddetails1('image',this.value)">
+        </div>
+        <div class="form-group">
+          <label for="Number">Price</label>
+          <input type="number" class="form-control card-text price" id="price" required onkeyup="adddetails1('price',this.value)">
+        </div>
+        <div class="form-group">
+          <label for="Name">Seller Name</label>
+          <input type="text" class="form-control card-text Name" id="Name1" required onkeyup="adddetails1('Name1',this.value)">
+        </div>
+        <div class="form-group">
+          <label for="Name">Name of the Product</label>
+          <input type="text" class="form-control card-text Name" id="Name" required onkeyup="adddetails1('Name',this.value)">
+        </div>
+        <div class="form-group">
+          <label for="Number">Phone Number</label>
+          <input type="number" class="form-control card-text Number" id="Number" required onkeyup="adddetails1('Number',this.value)">
+        </div>
+        <div class="form-group">
+          <label for="Street">Street</label>
+          <input id="Street" class="form-control card-text city" required onkeyup="adddetails1('Street',this.value)">
+        </div>
+        <div class="form-group">
+          <label for="city">City</label>
+          <input id="city" class="form-control card-text city" required onkeyup="adddetails1('city',this.value)">
+        </div>
+        <div class="form-group">
+          <label for="Number">Pin Code</label>
+          <input type="Number" class="form-control card-text city"id="Pin" required onkeyup="adddetails1('Pin',this.value)">
+        </div>
+
+        <p id="error">
+          Error
+        </p>
+        <p>
+          By clicking 'Submit' you confirm that you have carefully read and understood all the facts, statements and
+          conditions stated in the Terms of Use & Posting Rules of our website to which you unconditionally agree and
+          accept as true and correct and constituting a binding agreement between us.
+        </p>
+        <button type="button" class="btn btn-primary mb-2" onclick="signUp1()">Submit Ad</button>
+      </div>
+    </div>
+  </div>
+</body>
+<div class="loader" style="display: none;" id="loader">
+  <img src="image/loader.gif" alt="Loading">
+  <div></div>
+</div>
+<code id="det"></code>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+      let Title=document.getElementsByClassName("card-title").value;
+      let Category=document.getElementsByClassName("Category").value;
+      let AdDescription=document.getElementsByClassName("AdDescription").value;
+      let image=document.getElementsByClassName("image").value;
+      let price=document.getElementsByClassName("price").value;
+      let Name=document.getElementsByClassName("Name").value;
+      let Name1=document.getElementsByClassName("Name1").value;
+      let Number=document.getElementsByClassName("Number").value;
+      let Street=document.getElementsByClassName("Street").value;
+      let city=document.getElementsByClassName("city").value;
+      let Pin=document.getElementsByClassName("Pin").value;
+      error.innerHTML="Please Fill All Feilds"
+      let mydet={
+}
+function adddetails1(key,value) {
+    mydet[key] = value;
+            // }
+            // else{
+            //   mydet[key][index] =value;
+            // }
+}
+function signUp1() {
+  document.getElementById("obj").innerHTML = JSON.stringify(mydet);
+  if(!localStorage.getItem("object-det")){
+            localStorage.setItem("object-det",JSON.stringify([]))
+        }
+        let list1=JSON.parse(localStorage.getItem("object-det"));
+        list1.push(mydet)
+        localStorage.setItem("object-det",JSON.stringify(list1));
+        window.location.href="index.html" 
+        namedisplay();  
+} 
+function namedisplay(){
+    let element=""
+    let mydetindex=JSON.parse(localStorage.getItem("object-det"))
+    for(let i=0;i<mydetindex.length;i++){
+        element=element+"<input> <a href='view.html?id="+object-detindex[i].Name +"'target='_blank'>"+object-detindex[i].id+"</a></input>"
+    }
+    document.getElementById("head").innerHTML=element
+}
+
+function logout(){
+    localStorage.clear();
+    window.location.href="index.html"
+}
+let user_details=JSON.parse(localStorage.getItem("object-details"));
+for (let i = 0; i < user_details.length; i++) {
+           if(email==user_details[i].email && password==user_details[i].password){
+          window.location.href="ad.html"
+           }
+           else{
+var userId=localStorage.getItem("email");
+if (localStorage.getItem("userId") === null) {
+window.location.href="login.html"
+alert("Please Login First")
+}}}
+// else{
+// }
+// /* Getting User Data */
+// var CheckUser = db.collection("Users").doc(userId);
+// console.log(CheckUser);
+// var docRef = db.collection("Users").doc(userId);
+// docRef.get().then(function(doc) {
+//     if (doc.exists) {
+//         console.log("Document data:", doc.data());
+//         var name=doc.data().name
+//         WelcomeName.style.display="block"
+//         WelcomeName.innerHTML="Welcome :"+name.toUpperCase();
+//     } else {
+//         // doc.data() will be undefined in this case
+//         console.log("No such document!");
+//     }
+// }).catch(function(error) {
+//     console.log("Error getting document:", error);
+
+// });
+// function submitAd(){
+// error.innerHTML=""
+// if(AdTitle=="" || AdDescription=="" || number=="" || Category==""|| city==""||price=="" ){
+//     error.style.display="block"
+//     error.innerHTML="Please Fill All Feilds"
+// }
+// var file=Image.files[0]
+//         var reader=new FileReader();
+//         reader.onloadend=function(){
+//          var img=reader.result;
+//         db.collection("Ads").add({
+//             AdTitle,
+//             Category,
+//             AdDescription,
+//             Name,
+//             number,
+//             city,
+//             img,
+//             userId,
+//             price
+//         })
+//         .then(function(docRef) {
+//             showLoader()
+//             error.style.color="green"
+//             error.style.display="block"
+//             error.innerHTML="Your Ad Has Been Posted"
+//             console.log("Document written with ID: ", docRef.id);
+//             window.location.href="account.html"
+            
+//         })
+//         .catch(function(error) {
+//             console.error("Error adding document: ", error);
+//         });
+// }
+// reader.readAsDataURL(file)
+
+// }
+  
+    // let mydetail={
+// }
+
+// function adddetails1(index,item) {
+//  mydetail[index]=item; 
+// }
+// function signUp1(){
+//     $(function(index, item) {
+// $.ajax({
+// success: function(index, item) {
+//   $.each(function(index, item) {
+//     html +=
+//       '<div class="card bg-light border-dark mb-3" style="max-width: 70rem;">';
+//     html += `<div class="card-header">userid: ${item.userId} - id: ${item.id}</div>`;
+//     html += '<div class="card-body">';
+//     html += `<h5 class="card-title">${item.title}</h5>`;
+//     html += `<p class="card-text Category">${item.body}</p>`;
+//     html += `<p class="card-text AdDescription">${item.body}</p>`;
+//     html += `<p class="card-text price">${item.body}</p>`;
+//     html += `<p class="card-text Name">${item.body}</p>`;
+//     html += `<p class="card-text Number">${item.body}</p>`;
+//     html += `<p class="card-text city">${item.body}</p>`;
+//     html += "</div>";
+//     html += "</div>";
+//     html += "</div>";
+//     //using .html() will display one card,use loop to display each card
+//   });
+//   $(".container").html(mydetail);
+// }
+// });
+// });}
+</script>
+<!-- BootStarp -->
+<script src="js/bootstrap.min.js"></script>
+<script src="js/bootstrap.js"></script>
+</body>
+</html>
